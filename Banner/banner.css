@@ -6,10 +6,10 @@
 }
 
 body {
-  font-family: "Indie Flower", cursive;
-  background-color: #eee;
-  color: #555;
-  text-align: center;
+  font-family: "sans-serif", cursive;
+   background-color: #eee;
+  /*color: #555;
+  text-align: center; */
   padding: 4em 0;
 }
 
@@ -39,29 +39,22 @@ body {
 }
 
 .container {
-  position: relative;
-  width: 420px;
+  display: flex;
+  width: 75%;
   border: #fff solid 2px;
   border-radius: 4px;
   height: 420px;
 }
 
-.title {
-  position: absolute;
-  top: 45px;
-  left: 0;
-  width: 100%;
-  font-size: 2em;
-  font-weight: normal;
-  line-height: 1;
+.camp_text{
+  top: 50%;
+  position: relative;
+  width: 20rem;
 }
-
-.credit {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  font-size: 0.9em;
-  text-align: left;
+.camp_text h1{
+  font-weight: 700;
+  color: #172b4d;
+  font-family: Arial,sans-serif;
 }
 
 .book {
@@ -87,6 +80,7 @@ body {
 }
 .page:nth-child(1) {
   transform: rotateX(60deg) rotateY(3deg);
+  
 }
 .page:nth-child(2) {
   transform: rotateX(60deg) rotateY(4.5deg);
@@ -100,6 +94,7 @@ body {
 .page:nth-child(4) {
   transform: rotateX(60deg) rotateY(9deg);
   background-image: url(./Banner_photos/Cover.jpg);
+  
 }
 /* .page:nth-child(5) {
   transform: rotateX(60deg) rotateY(175.5deg);
@@ -212,22 +207,7 @@ body {
 .flip.flip4::after {
   animation: nextFlip4 25s -20s infinite steps(1);
 }
-.flip.flip5::after {
-  animation: nextFlip5 25s -20s infinite steps(1);
-}
-.flip.flip6::after {
-  animation: nextFlip6 25s -20s infinite steps(1);
-}
-.flip.flip7::after {
-  animation: nextFlip7 25s -20s infinite steps(1);
-}
-.flip.flip7 {
-  width: 30px;
-  border-width: 2px 0px 2px 2px;
-}
-.flip.flip7::after {
-  animation: nextFlip7 25s -20s infinite steps(1);
-}
+
 @keyframes flip1 {
   0%, 20% {
     transform: rotateX(60deg) rotateY(6deg);
@@ -282,178 +262,178 @@ body {
     transform: rotateY(0deg);
   }
   70% {
-    background-image: url("https://picsum.photos/420/300?random=5");
+    background-image: url("./Banner_photos/Page_1.jpg");
     background-position: -210px -2px;
     transform: rotateY(180deg);
   }
   80% {
-    background-image: url("https://picsum.photos/420/300?random=5");
+    background-image: url("./Banner_photos/Page_1.jpg");
     background-position: -178px -2px;
     transform: rotateY(0deg);
   }
   90% {
-    background-image: url("https://picsum.photos/420/300?random=1");
+    background-image: url("./Banner_photos/Page_1.jpg");
     background-position: -210px -2px;
     transform: rotateY(180deg);
   }
 }
 @keyframes nextFlip2 {
   0% {
-    background-image: url("./Banner_photos/Page_1.jpg");
+    background-image: url("./Banner_photos/Page_2.jpg");
     background-position: -148px -2px;
     transform: rotateY(0deg);
   }
   10.5% {
-    background-image: url("./Banner_photos/Page_1.jpg");
+    background-image: url("./Banner_photos/Page_2.jpg");
     background-position: -238px -2px;
     transform: rotateY(180deg);
   }
   20% {
-    background-image: url("./Banner_photos/Page_1.jpg");
+    background-image: url("./Banner_photos/Page_2.jpg");
     background-position: -148px -2px;
     transform: rotateY(0deg);
   }
   30.5% {
-    background-image: url("./Banner_photos/Page_1.jpg");
+    background-image: url("./Banner_photos/Page_2.jpg");
     background-position: -238px -2px;
     transform: rotateY(180deg);
   }
   40% {
-    background-image: url("./Banner_photos/Page_1.jpg");
+    background-image: url("./Banner_photos/Page_2.jpg");
     background-position: -148px -2px;
     transform: rotateY(0deg);
   }
   50.5% {
-    background-image: url("./Banner_photos/Page_1.jpg");
+    background-image: url("./Banner_photos/Page_2.jpg");
     background-position: -238px -2px;
     transform: rotateY(180deg);
   }
   60% {
-    background-image: url("./Banner_photos/Page_1.jpg");
+    background-image: url("./Banner_photos/Page_2.jpg");
     background-position: -148px -2px;
     transform: rotateY(0deg);
   }
   70.5% {
-    background-image: url("https://picsum.photos/420/300?random=5");
+    background-image: url("./Banner_photos/Page_2.jpg");
     background-position: -238px -2px;
     transform: rotateY(180deg);
   }
   80% {
-    background-image: url("https://picsum.photos/420/300?random=5");
+    background-image: url("./Banner_photos/Page_2.jpg");
     background-position: -148px -2px;
     transform: rotateY(0deg);
   }
   90.5% {
-    background-image: url("https://picsum.photos/420/300?random=1");
+    background-image: url("./Banner_photos/Page_2.jpg");
     background-position: -238px -2px;
     transform: rotateY(180deg);
   }
 }
 @keyframes nextFlip3 {
   0% {
-    background-image: url("./Banner_photos/Page_1.jpg");
+    background-image: url("./Banner_photos/Page_3.jpg");
     background-position: -118px -2px;
     transform: rotateY(0deg);
   }
   11% {
-    background-image: url("./Banner_photos/Page_1.jpg");
+    background-image: url("./Banner_photos/Page_3.jpg");
     background-position: -268px -2px;
     transform: rotateY(180deg);
   }
   20% {
-    background-image: url("./Banner_photos/Page_1.jpg");
+    background-image: url("./Banner_photos/Page_3.jpg");
     background-position: -118px -2px;
     transform: rotateY(0deg);
   }
   31% {
-    background-image: url("./Banner_photos/Page_1.jpg");
+    background-image: url("./Banner_photos/Page_3.jpg");
     background-position: -268px -2px;
     transform: rotateY(180deg);
   }
   40% {
-    background-image: url("./Banner_photos/Page_1.jpg");
+    background-image: url("./Banner_photos/Page_3.jpg");
     background-position: -118px -2px;
     transform: rotateY(0deg);
   }
   51% {
-    background-image: url("./Banner_photos/Page_1.jpg");
+    background-image: url("./Banner_photos/Page_3.jpg");
     background-position: -268px -2px;
     transform: rotateY(180deg);
   }
   60% {
-    background-image: url("./Banner_photos/Page_1.jpg");
+    background-image: url("./Banner_photos/Page_3.jpg");
     background-position: -118px -2px;
     transform: rotateY(0deg);
   }
   71% {
-    background-image: url("https://picsum.photos/420/300?random=5");
+    background-image: url("./Banner_photos/Page_3.jpg");
     background-position: -268px -2px;
     transform: rotateY(180deg);
   }
   80% {
-    background-image: url("https://picsum.photos/420/300?random=5");
+    background-image: url("./Banner_photos/Page_3.jpg");
     background-position: -118px -2px;
     transform: rotateY(0deg);
   }
   91% {
-    background-image: url("https://picsum.photos/420/300?random=1");
+    background-image: url("h./Banner_photos/Page_3.jpg");
     background-position: -268px -2px;
     transform: rotateY(180deg);
   }
 }
 @keyframes nextFlip4 {
   0% {
-    background-image: url("./Banner_photos/Page_1.jpg");
+    background-image: url("./Banner_photos/Page_4.jpg");
     background-position: -88px -2px;
     transform: rotateY(0deg);
   }
   11.5% {
-    background-image: url("./Banner_photos/Page_1.jpg");
+    background-image: url("./Banner_photos/Page_4.jpg");
     background-position: -298px -2px;
     transform: rotateY(180deg);
   }
   20% {
-    background-image: url("./Banner_photos/Page_1.jpg");
+    background-image: url("./Banner_photos/Page_4.jpg");
     background-position: -88px -2px;
     transform: rotateY(0deg);
   }
   31.5% {
-    background-image: url("./Banner_photos/Page_1.jpg");
+    background-image: url("./Banner_photos/Page_4.jpg");
     background-position: -298px -2px;
     transform: rotateY(180deg);
   }
   40% {
-    background-image: url("./Banner_photos/Page_1.jpg");
+    background-image: url("./Banner_photos/Page_4.jpg");
     background-position: -88px -2px;
     transform: rotateY(0deg);
   }
   51.5% {
-    background-image: url("./Banner_photos/Page_1.jpg");
+    background-image: url("./Banner_photos/Page_4.jpg");
     background-position: -298px -2px;
     transform: rotateY(180deg);
   }
   60% {
-    background-image: url("./Banner_photos/Page_1.jpg");
+    background-image: url("./Banner_photos/Page_4.jpg");
     background-position: -88px -2px;
     transform: rotateY(0deg);
   }
   71.5% {
-    background-image: url("https://picsum.photos/420/300?random=5");
+    background-image: url("./Banner_photos/Page_4.jpg");
     background-position: -298px -2px;
     transform: rotateY(180deg);
   }
   80% {
-    background-image: url("https://picsum.photos/420/300?random=5");
+    background-image: url("./Banner_photos/Page_4.jpg");
     background-position: -88px -2px;
     transform: rotateY(0deg);
   }
   91.5% {
-    background-image: url("https://picsum.photos/420/300?random=1");
+    background-image:url("./Banner_photos/Page_4.jpg");
     background-position: -298px -2px;
     transform: rotateY(180deg);
   }
 }
-@keyframes nextFlip5 {
+/* @keyframes nextFlip5 {
   0% {
     background-image: url("./Banner_photos/Page_1.jpg");
     background-position: -58px -2px;
@@ -607,18 +587,6 @@ body {
     background-image: url("https://picsum.photos/420/300?random=1");
     background-position: -388px -2px;
     transform: rotateY(180deg);
-  }
-}
-.twitterLink {
-  position: fixed;
-  bottom: 0.5em;
-  right: 0.5em;
-}
-.twitterLink img {
-  width: 2em;
-  filter: grayscale(100%);
-  transition: filter 0.25s;
-}
-.twitterLink img:hover {
-  filter: grayscale(0%);
-}/*# sourceMappingURL=banner.css.map */
+  } 
+}*/
+/*# sourceMappingURL=banner.css.map */
